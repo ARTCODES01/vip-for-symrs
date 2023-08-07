@@ -1,150 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
-    <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            font-family: 'Akira Expanded', sans-serif;
-            transition: background-color 0.5s;
-        }
-
-        .container {
-            background-color: rgba(0, 0, 0, 0.7);
-            width: 400px;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-            position: relative;
-            z-index: 1;
-            transition: box-shadow 0.5s;
-            text-align: center;
-        }
-
-        .container.active {
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0);
-        }
-
-        h1 {
-            font-size: 36px;
-            color: white;
-            margin-bottom: 20px;
-            text-shadow: 4px 4px 8px white;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            color: white;
-            margin-bottom: 5px;
-            text-shadow: 4px 4px 8px white;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            border-radius: 4px;
-            border: none;
-        }
-
-        input[type="submit"] {
-            width: 60%;
-            padding: 10px;
-            background-color: #444444;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #666666;
-        }
-
-        .container:before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-            opacity: 0;
-            transition: opacity 0.5s;
-            z-index: -1;
-        }
-
-        .container.active:before {
-            opacity: 1;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .new-content {
-            margin-top: 40px;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akira Coming Soon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akira+Expand&display=swap">
+<style>
+  body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .text-container {
+    font-family: 'Akira Expand', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>symrs.vip</h1>
-        <form id="login-form">
-            <div class="form-group">
-                <label for="access-code">welcome to our vip</label>
-                <input type="text" id="access-code" name="access-code" placeholder="enter your code" required>
-            </div>
-            <input type="submit" value="Redeem">
-        </form>
-        <div id="new-content" class="hidden">
-            <h1>
-                <a href="https://discord.gg/symrs" style="color: white; text-decoration: none;">soon nga</a>
-            </h1>
-            <p style="text-align: center;">
-            </p>
-            <p style="text-align: center;">
-                <br>
-                <a href="mailto:support@symrs.com" style="color: white; text-decoration: none;">support@symrs.com</a>
-            </p>
-        </div>                    
-    </div>
-
-    <script>
-        const container= document.querySelector('.container');
-        const body = document.body;
-        const loginForm = document.getElementById('login-form');
-        const newContent = document.getElementById('new-content');
-
-        container.addEventListener('click', function(event) {
-            if (event.target === this) {
-                body.classList.toggle('active');
-            }
-        });
-
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            body.style.backgroundColor = "black";
-            container.classList.add('active');
-            loginForm.classList.add('hidden');
-            const heading = document.querySelector('h1');
-            heading.classList.add('hidden');
-            newContent.classList.remove('hidden');
-        });
-    </script>
-    
+<div class="text-container">
+  <p>ungraved, akami, shanky, maxxy, prez, kon, aizen...<p>
+<div class="text-container">
+  <p>opps soon to be handled....<p>
+</div>
 </body>
 </html>
